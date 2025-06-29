@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { toast } from "react-toastify";
 import { motion } from "framer-motion";
 
-// Animation Variants
+
 const fadeLeft = {
   hidden: { opacity: 0, x: -50 },
   visible: {
@@ -76,7 +76,7 @@ export default function Contact() {
         variants={fadeLeft}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: false, amount: 0.3 }} // Animate every time it scrolls in
+        viewport={{ once: false, amount: 0.3 }} 
       >
         Contact Me
       </motion.h2>
@@ -88,7 +88,7 @@ export default function Contact() {
           variants={fadeLeft}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.3 }} // Animate every time it scrolls in
+          viewport={{ once: false, amount: 0.3 }} 
         >
           <h3 className="text-3xl font-bold text-center text-primary">
             Get in Touch
@@ -148,7 +148,7 @@ export default function Contact() {
           variants={fadeRight}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.3 }} // Animate every time it scrolls in
+          viewport={{ once: false, amount: 0.3 }} 
         >
           <form onSubmit={handleSubmit} className="space-y-5">
             <input

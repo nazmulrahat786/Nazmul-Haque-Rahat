@@ -2,7 +2,7 @@ import React from 'react';
 import { FaUserCircle } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
-// Container variants with staggered children for polished UX
+
 const containerVariants = {
   hidden: { opacity: 0, y: 40 },
   visible: { 
@@ -10,7 +10,7 @@ const containerVariants = {
     y: 0,
     transition: {
       duration: 0.6,
-      ease: [0.4, 0, 0.2, 1], // smooth cubic bezier ease-out
+      ease: [0.4, 0, 0.2, 1], 
       staggerChildren: 0.15,
       delayChildren: 0.1,
     }

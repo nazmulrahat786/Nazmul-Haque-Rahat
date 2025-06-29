@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 import { motion, AnimatePresence } from "framer-motion";
 import toast, { Toaster } from "react-hot-toast";
 
-// Animation variants for checkmark
+
 const checkmarkVariants = {
   hidden: { pathLength: 0, opacity: 0 },
   visible: {
@@ -56,7 +56,7 @@ export default function Navbar() {
 
       <div className="navbar fixed top-0 z-50 bg-base-100 shadow-md backdrop-blur-md">
         <div className="max-w-7xl w-full mx-auto px-6 md:px-4 flex items-center relative py-3">
-          {/* Left - Logo */}
+          {/*Logo */}
           <div className="flex items-center flex-shrink-0">
             <img
               src="/NRH.png"
@@ -65,7 +65,7 @@ export default function Navbar() {
             />
           </div>
 
-          {/* Center - Nav Links */}
+          {/*Nav Links */}
           <nav className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 hidden md:flex space-x-8 font-medium text-black dark:text-white">
             {navItems.map((item) => (
               <Link
@@ -83,7 +83,7 @@ export default function Navbar() {
             ))}
           </nav>
 
-          {/* Right - Download Button */}
+          {/* Download Button */}
           <div className="ml-auto hidden md:flex">
             <motion.a
               href="/resume.pdf"
@@ -127,7 +127,7 @@ export default function Navbar() {
             </motion.a>
           </div>
 
-          {/* Mobile Menu */}
+       
           <div className="dropdown dropdown-end md:hidden ml-auto">
             <label
               tabIndex={0}

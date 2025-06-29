@@ -53,7 +53,7 @@ export default function Education() {
           </div>
         </motion.div>
 
-        {/* Add more items below if needed */}
+       
       </div>
     </section>
   );

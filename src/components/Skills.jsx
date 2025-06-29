@@ -5,33 +5,33 @@ const skillCategories = [
   {
     title: 'Frontend',
     skills: [
-      'https://cdn-icons-png.flaticon.com/128/174/174854.png', // HTML
-      'https://cdn-icons-png.flaticon.com/128/732/732190.png', // CSS
-      'https://cdn-icons-png.flaticon.com/128/875/875209.png', // JS
-      'https://cdn-icons-png.flaticon.com/128/5968/5968292.png', // React
+      'https://cdn-icons-png.flaticon.com/128/174/174854.png', 
+      'https://cdn-icons-png.flaticon.com/128/732/732190.png', 
+      'https://cdn-icons-png.flaticon.com/128/875/875209.png', 
+      'https://cdn-icons-png.flaticon.com/128/5968/5968292.png', 
     ],
   },
   {
     title: 'Backend',
     skills: [
-      'https://www.freepnglogos.com/uploads/javascript-png/javascript-nodejs-logo-27.png', // Node.js
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1tVeH30JNbVbeRd72gFWPWYkSqBDgdQ-pog&s', // Express
-      'https://images.seeklogo.com/logo-png/48/1/mongodb-logo-png_seeklogo-481256.png', // MongoDB
-      'https://firebase.google.com/static/images/brand-guidelines/logo-vertical.png', // Firebase
+      'https://www.freepnglogos.com/uploads/javascript-png/javascript-nodejs-logo-27.png', 
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1tVeH30JNbVbeRd72gFWPWYkSqBDgdQ-pog&s', 
+      'https://images.seeklogo.com/logo-png/48/1/mongodb-logo-png_seeklogo-481256.png', 
+      'https://firebase.google.com/static/images/brand-guidelines/logo-vertical.png', 
     ],
   },
   {
     title: 'Tools & Others',
     skills: [
-      'https://cdn-icons-png.flaticon.com/128/733/733609.png', // GitHub
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiJNnjZv36ijogi3aM_xcSMy26_QeOWrVmJQ&s', // Vercel
-      'https://cdn-icons-png.flaticon.com/128/5968/5968705.png', // Figma
-      'https://pipedream.com/s.v0/app_XaLh2x/logo/orig', // ✅ VS Code (NEW)
+      'https://cdn-icons-png.flaticon.com/128/733/733609.png', 
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiJNnjZv36ijogi3aM_xcSMy26_QeOWrVmJQ&s', 
+      'https://cdn-icons-png.flaticon.com/128/5968/5968705.png', 
+      'https://pipedream.com/s.v0/app_XaLh2x/logo/orig', 
     ],
   },
 ];
 
-// Variants for the card container (fade + slide up)
+
 const cardVariants = {
   hidden: { opacity: 0, y: 30 },
   visible: { 
@@ -40,13 +40,13 @@ const cardVariants = {
     transition: {
       duration: 0.6,
       ease: [0.4, 0, 0.2, 1],
-      staggerChildren: 0.12, // stagger children animations
+      staggerChildren: 0.12,
       delayChildren: 0.1,
     }
   }
 };
 
-// Variants for each skill icon (fade + scale)
+
 const skillVariants = {
   hidden: { opacity: 0, scale: 0.8 },
   visible: { 
@@ -79,7 +79,7 @@ export default function Skills() {
                   key={index}
                   variants={skillVariants}
                   className="w-14 h-14 p-1 bg-white rounded-md shadow-sm"
-                  whileHover={{ scale: 1.15 }} // slightly bigger on hover for extra interactivity
+                  whileHover={{ scale: 1.15 }} 
                   transition={{ type: "spring", stiffness: 300 }}
                 >
                   <img

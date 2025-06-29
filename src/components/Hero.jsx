@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import image from '../assets/myphoto.jpg';
 import { motion, AnimatePresence } from 'framer-motion';
-import toast, { Toaster } from 'react-hot-toast';  // Import toast
+import toast, { Toaster } from 'react-hot-toast';  
 
-// Animation Variants
+
 const containerVariants = {
   hidden: {},
   visible: {
@@ -46,7 +46,7 @@ export default function Hero() {
 
     setTimeout(() => {
       setShowCheckmark(true);
-      toast.success('Resume downloaded successfully! 🎉');  // Show toast here
+      toast.success('Resume downloaded successfully! 🎉');  
     }, 300);
 
     setTimeout(() => {
@@ -57,7 +57,7 @@ export default function Hero() {
 
   return (
     <>
-      {/* Toast container */}
+ 
       <Toaster position="top-center" reverseOrder={false} />
 
       <motion.section
@@ -114,18 +114,17 @@ export default function Hero() {
               variants={itemVariants}
             >
               <motion.a
-                href="/path/to/your_resume.pdf" // Replace with your resume path
+                href="/path/to/your_resume.pdf" 
                 download
                 className="btn btn-primary relative flex items-center justify-center overflow-hidden"
                 onClick={handleDownloadClick}
                 whileTap={{ scale: 0.9 }}
               >
-                {/* Text stays taking space even when hidden */}
+              
                 <span style={{ visibility: showCheckmark ? 'hidden' : 'visible' }}>
                   {isDownloading ? "Downloading..." : "Download Resume"}
                 </span>
 
-                {/* SVG Checkmark */}
                 <AnimatePresence>
                   {showCheckmark && (
                     <motion.svg
